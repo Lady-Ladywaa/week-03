@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register formt</title>
+</head>
+<body>
+    <div style="text-align: center;">
+    <form action="/api/register" method="POST">
+        <table align="center" border="0" cellpadding="5">
+            <tr>
+                <td>
+    <h1 align="center">สมัครสมาชิก</h1>
+      <div>
+    <label for="username">ชื่อผู้ใช้:</label>
+    <br>
+    <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้งานที่นี่">
+  </div>
+      <div>
+    <label for="password">รหัสผ่าน:</label>
+    <br>
+    <input type="password" id="password" name="password" placeholder="กรอกรหัสที่นี่" >
+  </div>
+     <div>
+    <label for="email">อีเมล:</label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="กรอกอีเมลที่นี่" required >
+  </div>
+  <p>เลือกแพ็กเกจ:</p>
+  <label>
+    <input type="radio" name="package" value="free" required> ฟรี (Free)
+  </label>
+  <label>
+    <input type="radio" name="package" value="premium"> พรีเมียม (Premium)
+  </label>
+  <p>ความสนใจ:</p>
+  <label>
+    <input type="checkbox" name="interest" value="movie"> ดูหนัง
+  </label>
+  <label>
+    <input type="checkbox" name="interest" value="music"> ฟังเพลง
+  </label>
+  <label>
+    <input type="checkbox" name="interest" value="game"> เล่นเกม
+  </label>
+  <br><br>
+  <button type="submit">ยืนยันการสมัคร</button>
+  </td>
+  </tr>
+  </table>
+
+</form>
+</div>
+</body>
+</html>

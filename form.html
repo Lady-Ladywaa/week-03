@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านอาหาร</title>
+</head>
+<body>
+    <h1>Mala-tang</h1>
+    <p>order here</p>
+    <form acction="/api/order"  method="get">
+        <p>ชื่อลูกค้า</p>
+        <label for="">
+        <input id="cname" type="text" name="cname" required/>
+        </label>
+        <p>เลือกน้ำซุป</p>
+        <label for="">
+            ซุปหม่าล่า
+            <input type="radio" name="soup" required>
+        </label>
+        <label for="">
+            ซุปน้ำดำ
+            <input type="radio" name="soup" required>
+        </label>   
+        <label for="">
+            ซุปสุกี้
+            <input type="radio" name="soup" required>
+        </label>
+        <br />
+        <p>เลือกของที่ชอบ</p>
+
+
+        <label>
+            เนื้อวัว
+            <input type="checkbox" name="meat" value="beef"> 
+        </label>
+        <label>
+            เนื้อไก่
+            <input type="checkbox" name="meat" value="chicken">
+        </label>
+        <label>
+            แครอท
+            <input type="checkbox" name="vegtable"/>
+        </label>
+        <br>    
+        <button type="submit">สั่งรายการ</buttonbutton>
+           
+
+    </form>
+</body>
+</html>
